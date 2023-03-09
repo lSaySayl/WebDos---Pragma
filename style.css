@@ -1,0 +1,513 @@
+/* Exportando tipo de letra */
+
+
+/* Variables para color */
+
+
+:root {
+    --fondo: #0f0e17fa;
+    --fondo-tarjetas: #0f0e17;
+    --titulos: #fffffe;
+    --botones: #ff8906;
+    --complementario: #e53170;
+    --textos: #94a1b2;
+
+} 
+
+
+/* Reiniciando estilos y asignando letra*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Asignando tipo de letra para todo el documento */
+
+
+/* Clases para quitar y aparecer header */
+
+header {
+    display: none;
+}
+
+.headerVisible {
+    display: block;
+}
+
+/* Estilos para header y navbar */
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fondo-tarjetas);
+    height: 150px;
+    width: 100%;
+}
+
+.navbar .logo-navbar {
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}
+
+.navbar-ul {
+    
+    display: flex;
+    list-style: none;
+
+}
+
+.navbar-ul li button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    min-width: 10em;
+    min-height: 2.5em;
+    border: none;
+    background-color: transparent;
+    color: var(--textos);
+    font-size: 20px;
+}
+
+.navbar-ul li button:hover {
+    color: var(--complementario);
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.btn-cerrar {
+    min-width: 150px;
+    height: 43px;
+    background-color: var(--botones);
+    color: var(--fondo);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+
+.btn-cerrar:hover {
+    background-color: var(--complementario);
+    transition: ease-in-out 0.3s;
+    color: var(--titulos);
+
+}
+
+
+/* Estilos para el main y formulario */
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilos para quitar form */
+
+.formInvisible {
+    display: none;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;
+    background-color: var(--fondo-tarjetas);
+    border-radius: 50px;
+    box-shadow: 0 60px 40px -30px var(--fondo-tarjetas);
+}
+
+.container-interno {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-interno:hover .icono {
+    transform: rotate(360deg);
+    transition: 0.8s ease-in-out;
+
+}
+
+
+.container-form {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    left: 0;
+}
+
+
+form {
+    max-width: 260px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono img {
+    width: 100px;
+}
+
+
+.titulos h2 {
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--titulos);
+}
+
+.container-input {
+    position: relative;
+    height: 37px;
+    margin-bottom: 2rem;
+}
+
+.campo-entrada {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--textos);
+    padding: 0;
+    font-size: 0.95rem;
+    color: #151111;
+    transition: 0.4s;
+}
+
+.campo-entrada:focus {
+    color: #fffffe;
+    border-bottom: 2px solid var(--botones);
+}
+
+
+label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.95rem;
+    color: #94a1b2;
+    pointer-events: none;
+    transition: 0.4s ease;
+    margin-left: 5px;
+}
+
+label i {
+    margin-right: 10px;
+}
+
+.campo-entrada:focus+label {
+    color: var(--complementario);
+    transform: translate(-1px, -35px);
+}
+
+
+
+.btn-iniciar {
+    display: inline-block;
+    width: 100%;
+    height: 43px;
+    background-color: var(--botones);
+    color: var(--fondo);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-iniciar:hover {
+    background-color: var(--complementario);
+    transition: ease-in-out 0.3s;
+    color: var(--titulos);
+
+}
+
+/* Estilos para la sección de imagen */
+
+
+.container-imagen-inicio {
+
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    left: 45%;
+    top: 0;
+
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+}
+
+ 
+
+ /* Estilos para logos formulario */
+
+ 
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* Estilos para formularios de clientes */
+
+
+
+.clientes {
+    position: relative;
+    width: 600px;
+    max-width: 1000px;
+    height: 700px;
+    background-color: var(--fondo-tarjetas);
+    border-radius: 50px;
+    box-shadow: 0 60px 40px -30px var(--fondo-tarjetas);
+
+}
+
+.clientes .container-form {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.clientes .titulo-clientes {
+    text-align: center;
+    color: var(--titulos);
+
+}
+
+
+/* Estilos para aparecer y desaparecer form de clientes */
+
+.cliente-invisible {
+    display: none;
+}
+
+
+/* Estilos para formularios de celulares */
+
+
+.celulares {
+    position: relative;
+    width: 600px;
+    max-width: 1000px;
+    height: 700px;
+    background-color: var(--fondo-tarjetas);
+    border-radius: 50px;
+    box-shadow: 0 60px 40px -30px var(--fondo-tarjetas);
+
+}
+
+.celulares .container-form {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.celulares .titulo-celulares {
+    text-align: center;
+    color: var(--titulos);
+
+}
+
+
+/* Estilos para aparecer y desaparecer form de celulares */
+
+.celular-invisible {
+    display: none;
+}
+
+/* Estilos para formularios de portátiles*/
+
+.portatiles {
+    position: relative;
+    width: 600px;
+    max-width: 1000px;
+    height: 700px;
+    background-color: var(--fondo-tarjetas);
+    border-radius: 50px;
+    box-shadow: 0 60px 40px -30px var(--fondo-tarjetas);
+
+}
+
+.portatiles .container-form {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.portatiles .titulo-portatiles {
+    text-align: center;
+    color: var(--titulos);
+
+}
+
+
+/* Estilos para aparecer y desaparecer form de celulares */
+
+.portatil-invisible {
+    display: none;
+}
+
+
+
+/* Estilos para las cards luego de recolectar la información */
+
+.container-recoleccion {
+    min-width: 800px;
+    padding: 40px 0;
+    background-color: var(--fondo-tarjetas);
+    border-radius: 20px;
+}
+
+.container-contenido {
+    margin: 0 40px;
+
+}
+
+.card {
+    border-radius:30px;
+    background-color: var(--titulos);
+    min-height: 500px;
+}
+
+.card-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.card-imagen {
+    position: relative;
+    padding: 25px 0;
+}
+
+.cubrir {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    height: 40%;
+    width: 100%;
+    background-color: var(--botones);
+}
+
+
+.imagen {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: var(--titulos);
+    padding: 3px;
+}
+
+.imagen .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--fondo-tarjetas);
+}
+
+.card-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.informacion {
+    display: flex;
+    margin: 50px;
+    border-top: 2px solid var(--botones);
+
+}
+
+.informacion section {
+    text-align: center;
+    min-width: 100px;
+    padding: 20px;
+     border-bottom: 2px solid var(--botones);
+}
+
+.informacion section p {
+    margin-top: 10px;
+}
+
+
+.btn-card {
+    
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    color: var(--complementario);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 70px;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.btn-card:hover {
+    transition: ease-in-out 0.3s;
+    color: var(--botones);
+}
+
+/* Estilo para desaparecer card de celulares */
+
+.recoleccion-invisible {
+    display: none;
+}

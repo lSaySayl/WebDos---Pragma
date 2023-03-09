@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48bbe53910.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+            <img src="https://raw.githubusercontent.com/lSaySayl/imagenesExternas/main/logo.png" alt="" class="logo-navbar">
+            <ul class="navbar-ul">
+                <li><button id="clientes">Clientes</button></li>
+                <li><button id="celulares">Celulares</button></li>
+                <li><button id="portatiles">Portátiles</button></li>
+            </ul>
+            <button class="btn-cerrar" id="btn-cerrar">Cerrar sesión</button>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <!-- Formulario para iniciar sesión -->
+
+        <section id="form-inicio" class="container">
+            <section class="container-interno">
+                <section class="container-form">
+                    <form>
+                        <section class="icono">
+                            <img src="https://raw.githubusercontent.com/lSaySayl/imagenesExternas/main/entrar.png" />
+
+                        </section>
+
+                        <section class="titulos">
+                            <h2>¡Bienvenido!</h2>
+                        </section>
+
+                        <section class="form-interno">
+                            <section class="container-input">
+                                <input id="usuario" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label"><i class="fa-solid fa-user"></i>Usuario</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="contraseña" type="password" class="campo-entrada" autocomplete="off" />
+                                <label class="label"><i class="fa-solid fa-lock"></i></i>Contraseña</label>
+                            </section>
+
+                            <input id="btn-iniciar" type="submit" value="Iniciar sesión " class="btn-iniciar" /> 
+                        </section>
+
+                    </form>
+
+
+
+                </section>
+
+                <section class="container-imagen-inicio">
+
+                    <img class="imagen-inicio" src="https://raw.githubusercontent.com/lSaySayl/imagenesExternas/main/Whangaehu.png" alt="" />
+
+                </section>
+            </section>
+        </section>
+
+        <section id="form-clientes" class="clientes cliente-invisible">
+            <section class="container-interno">
+                <section class="container-form">
+                    <form>
+                        <section class="logo">
+                            <img src="https://raw.githubusercontent.com/lSaySayl/imagenesExternas/main/usuario.png" />
+
+                        </section>
+
+
+                        <section class="form-interno">
+                            <section class="container-input">
+                                <input id="nombre-cliente" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Nombre</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="documento-cliente" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Documento</label>
+                            </section>
+
+
+                            <section class="container-input">
+                                <input id="celular-cliente" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Celular</label>
+                            </section>
+
+
+                            <section class="container-input">
+                                <input id="direccion-cliente" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Dirección</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="correo-cliente" type="em" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Correo</label>
+                            </section>
+
+                            <input id="btn-guardar-cliente" type="button" value="Guardar" class="btn-iniciar" />
+                        </section>
+
+                    </form>
+
+
+                </section>
+
+
+
+
+
+
+            </section>
+
+
+        </section>
+
+        <section id="form-celulares" class="celulares celular-invisible">
+            <section class="container-interno">
+                <section class="container-form">
+                    <form>
+                        <section class="logo">
+                            <img src="https://raw.githubusercontent.com/lSaySayl/imagenesExternas/main/celular.png" />
+
+                        </section>
+
+
+                        <section class="form-interno">
+                            <section class="container-input">
+                                <input id="nombre-celular" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Nombre</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="referencia-celular" type="text" class="campo-entrada" autocomplete="off"/>
+                                <label class="label">Referencia</label>
+                            </section>
+
+
+                            <section class="container-input">
+                                <input id="codigo-celular" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Código</label>
+                            </section>
+
+
+                            <section class="container-input">
+                                <input id="valor-celular" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Valor</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="cantidad-celular" type="email" class="campo-entrada" autocomplete="off"/>
+                                <label class="label">Cantidad</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="imagen-celular" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">URL de la imagen</label>
+                            </section>
+
+                            <input id="btn-guardar-celular" type="button" value="Guardar" class="btn-iniciar" />
+                        </section>
+
+                    </form>
+
+
+                </section>
+
+            </section>
+
+
+        </section>
+
+        <section id="form-portatiles" class="portatiles portatil-invisible">
+            <section class="container-interno">
+                <section class="container-form">
+                    <form>
+                        <section class="logo">
+                            <img src="https://raw.githubusercontent.com/lSaySayl/imagenesExternas/main/laptop.png" />
+
+                        </section>
+
+
+                        <section class="form-interno">
+                            <section class="container-input">
+                                <input id="nombre-portatil" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Nombre</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="referencia-portatil" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Referencia</label>
+                            </section>
+
+
+                            <section class="container-input">
+                                <input id="codigo-portatil" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Código</label>
+                            </section>
+
+
+                            <section class="container-input">
+                                <input id="valor-portatil" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Valor</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="cantidad-portatil" type="email" class="campo-entrada" autocomplete="off" />
+                                <label class="label">Cantidad</label>
+                            </section>
+
+                            <section class="container-input">
+                                <input id="imagen-portatil" type="text" class="campo-entrada" autocomplete="off" />
+                                <label class="label">URL de la imagen</label>
+                            </section>
+
+                            <input id="btn-guardar-portatil" type="button" value="Guardar" class="btn-iniciar" />
+                        </section>
+
+                    </form>
+
+
+                </section>
+
+            </section>
+
+
+        </section>
+
+        <section id="card-celulares" class="container-recoleccion recoleccion-invisible">
+
+        </section>
+
+        <section id="card-portatiles" class="container-recoleccion recoleccion-invisible">
+
+        </section>
+
+        <section id="card-clientes" class="container-recoleccion recoleccion-invisible">
+
+            
+            
+        </section>
+
+
+    </main>
+
+
+
+</body>
+
+</html>
