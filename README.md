@@ -1,7 +1,5 @@
 # Programación para la web - momento dos  
 
-Web uno - Pragma  
-
 Login:  
 
 ![Login](https://user-images.githubusercontent.com/105466130/229315907-ce03bf76-e471-453f-beca-af9634b86ef2.png)
